@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background-color: #0e2957;
+
+    position: fixed;
+    bottom: 0;
+    bottom: calc(1.18*env(safe-area-inset-bottom));
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: 20px;
+    z-index: 20;
+    padding: 20px;
+
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0.5em;
+    transition: all 500ms;
+}
+
+.link:hover, .link:focus{
+    color:  #fcb604;
+}
+
+.name-input-container{
+    margin: 1em;
+}
+.name{
+    font-weight: bolder;
+}
+@media (min-width: 950px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
